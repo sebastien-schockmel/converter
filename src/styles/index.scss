@@ -1,0 +1,16 @@
+@use 'reset';
+@use 'vars';
+
+// On peut importer la font de cette facon ou alors via le HTML
+// @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;700&display=swap');
+
+body {
+  font-family: vars.$font;
+  background-color: vars.$color-alt;
+  font-weight: 300;
+  color: vars.$color;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,34 @@
+@use 'src/styles/vars';
+
+.converter {
+  width: 300px;
+  height: 100vh;
+  margin: auto 0;
+  text-align: center;
+  padding: vars.$gutter;
+}
+
+
+.toggler {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -25px auto;
+  display: block;
+  border-radius: 50%;
+  background-color: vars.$color-light;
+  border: 4px solid vars.$color;
+  color: vars.$color;
+  font-size: 2em;
+  font-weight: bold;
+  transition: all vars.$transition-fast;
+  
+  &:hover { // .toggler:hover
+    background-color: vars.$color-alt;
+  }
+
+  &--open { //.toggler--open
+    transform: rotate(90deg);
+  }
+}
